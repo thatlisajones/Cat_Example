@@ -1,6 +1,6 @@
-<h1>Cats!</h1>
+<h1>Emoji Diary - Basic Function</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>First Round of Emoji</h2>
 
 <ul>
   {{#each cats}}
@@ -10,7 +10,29 @@
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Second Round of Emoji</h2>
+
+<ul>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Third Round of Emoji</h2>
+
+<ul>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+<h2>Rank the Selected Emoji</h2>
 
 <ul>
   {{#each cats}}
