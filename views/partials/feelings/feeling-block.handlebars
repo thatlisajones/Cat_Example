@@ -1,9 +1,8 @@
 <li>
-	{{name}}
+	<p class="emoji" style="font-size: 50px">{{feeling_emoji}}</p>
 
 	<button class="change-select" data-id="{{id}}" data-newselect="{{select}}">
-		{{#if select}}SELECTED!{{else}}SELECT ONE{{/if}}
+		{{#if select}}selected{{else}}select{{/if}}
 	</button>
 
-	<button class="delete-feeling" data-id="{{this.id}}">DELETE!</button>
 </li>
