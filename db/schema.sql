@@ -14,7 +14,7 @@ CREATE TABLE feelings(
   primary key(feeling_id)
 );
 
-INSERT INTO feelings (feeling_group, feeling_name, feeling_color, feeling_value)
+INSERT INTO feelings (feeling_group, feeling_name, feeling_emoji, feeling_color, feeling_value)
 VALUES   ("Joy", "Excited", "&#x1F601", "#ADFF2F", 101),
   ("Joy", "Sensuous", "&#x1F60F", "#006400", 102),
   ("Joy", "Energetic", "&#x1F92A", "#228B22", 103),
